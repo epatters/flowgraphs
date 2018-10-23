@@ -37,7 +37,7 @@ load_concepts(db)
 # K-means clustering on the Iris dataset using base R.
 # FIXME: The encapsulated box should only have one input port.
 # FIXME: Box order, as noted in PyFlowGraphs.
-semantic = read_r_semantic_graph(db, "clustering_kmeans")
+semantic = read_r_semantic_graph("clustering_kmeans")
 d = WiringDiagram([], [])
 kmeans = add_box!(d, construct(pair(concepts(db,
   ["k-means", "clustering-model-n-clusters"])...)))

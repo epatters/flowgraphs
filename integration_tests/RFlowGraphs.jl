@@ -18,6 +18,8 @@ using Test
 using Catlab.Diagram
 using SemanticFlowGraphs
 
+import ..IntegrationTest: db
+
 const r_dir = joinpath(@__DIR__, "r")
 
 function read_r_raw_graph(name::String)
@@ -29,10 +31,6 @@ end
 
 # Semantic flow graph
 #####################
-
-# Load all concepts at the outset.
-const db = OntologyDB()
-load_concepts(db)
 
 # K-means clustering on the Iris dataset using base R.
 # FIXME: The encapsulated box should only have one input port.

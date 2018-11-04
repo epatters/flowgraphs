@@ -17,6 +17,10 @@ using Test
 
 using SemanticFlowGraphs
 
+# Load all concepts at the outset.
+const db = OntologyDB()
+load_concepts(db)
+
 @testset "PyFlowGraphs" begin
   include("PyFlowGraphs.jl")
 end

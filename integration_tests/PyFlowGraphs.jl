@@ -19,6 +19,8 @@ using Nullables
 using Catlab.Diagram
 using SemanticFlowGraphs
 
+import ..IntegrationTest: db
+
 const py_dir = joinpath(@__DIR__, "python")
 
 function read_py_raw_graph(name::String)
@@ -46,10 +48,6 @@ b1, b2 = boxes(diagram)
 
 # Semantic flow graph
 #####################
-
-# Load all concepts at the outset.
-const db = OntologyDB()
-load_concepts(db)
 
 # Read SQL table using pandas and SQLAlchemy.
 semantic = read_py_semantic_graph("pandas_read_sql")

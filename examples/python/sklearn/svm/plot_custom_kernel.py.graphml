@@ -1,0 +1,1412 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="annotation" attr.type="string" for="edge" id="d21" />
+  <key attr.name="id" attr.type="string" for="edge" id="d20" />
+  <key attr.name="value" attr.type="json" for="port" id="d19" />
+  <key attr.name="annotation_index" attr.type="long" for="node" id="d18" />
+  <key attr.name="value" attr.type="double" for="port" id="d17" />
+  <key attr.name="annotation_index" attr.type="long" for="port" id="d16" />
+  <key attr.name="annotation_kind" attr.type="string" for="node" id="d15" />
+  <key attr.name="annotation" attr.type="string" for="node" id="d14" />
+  <key attr.name="value" attr.type="long" for="port" id="d13" />
+  <key attr.name="construct" attr.type="boolean" for="node" id="d12" />
+  <key attr.name="slot" attr.type="string" for="node" id="d11" />
+  <key attr.name="qual_name" attr.type="string" for="port" id="d10" />
+  <key attr.name="module" attr.type="string" for="port" id="d9" />
+  <key attr.name="id" attr.type="string" for="port" id="d8" />
+  <key attr.name="annotation" attr.type="string" for="port" id="d7" />
+  <key attr.name="value" attr.type="string" for="port" id="d6" />
+  <key attr.name="portkind" attr.type="string" for="port" id="d5" />
+  <key attr.name="argname" attr.type="string" for="port" id="d4" />
+  <key attr.name="qual_name" attr.type="string" for="node" id="d3" />
+  <key attr.name="module" attr.type="string" for="node" id="d2" />
+  <key attr.name="output_node" attr.type="string" for="graph" id="d1" />
+  <key attr.name="input_node" attr.type="string" for="graph" id="d0" />
+  <graph edgedefault="directed">
+    <node id="__root__">
+      <graph edgedefault="directed">
+        <data key="d0">__in__</data>
+        <data key="d1">__out__</data>
+        <node id="print:1">
+          <data key="d2">builtins</data>
+          <data key="d3">print</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d6">
+======================
+SVM with custom kernel
+======================
+
+Simple usage of Support Vector Machines to classify a sample. It will
+plot the decision surface and the support vectors.
+
+</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+        </node>
+        <node id="load_iris:1">
+          <data key="d2">sklearn.datasets.base</data>
+          <data key="d3">load_iris</data>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">1</data>
+            <data key="d9">sklearn.utils</data>
+            <data key="d10">Bunch</data>
+          </port>
+        </node>
+        <node id="getattr:2">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d11">data</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">1</data>
+            <data key="d9">sklearn.utils</data>
+            <data key="d10">Bunch</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">data</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">2</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="slice:1">
+          <data key="d2">builtins</data>
+          <data key="d3">slice</data>
+          <data key="d12">True</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="slice:2">
+          <data key="d2">builtins</data>
+          <data key="d3">slice</data>
+          <data key="d12">True</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d13">2</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="__tuple__:1">
+          <data key="d2">flowgraph.trace.operator</data>
+          <data key="d3">__tuple__</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="getitem:1">
+          <data key="d2">_operator</data>
+          <data key="d3">getitem</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">2</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="getattr:3">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d11">target</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">1</data>
+            <data key="d9">sklearn.utils</data>
+            <data key="d10">Bunch</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">target</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="SVC:1">
+          <data key="d2">sklearn.svm.classes</data>
+          <data key="d3">SVC</data>
+          <data key="d14">python/sklearn/base-classifier</data>
+          <data key="d15">construct</data>
+          <port name="kernel">
+            <data key="d4">kernel</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">5</data>
+            <data key="d9">sklearn.svm.classes</data>
+            <data key="d10">SVC</data>
+            <data key="d7">python/sklearn/base-classifier</data>
+          </port>
+        </node>
+        <node id="BaseLibSVM.fit:1">
+          <data key="d2">sklearn.svm.base</data>
+          <data key="d3">BaseLibSVM.fit</data>
+          <data key="d14">python/sklearn/fit-classification</data>
+          <data key="d15">function</data>
+          <port name="self">
+            <data key="d4">self</data>
+            <data key="d5">input</data>
+            <data key="d8">5</data>
+            <data key="d9">sklearn.svm.classes</data>
+            <data key="d10">SVC</data>
+            <data key="d7">python/sklearn/base-classifier</data>
+            <data key="d16">1</data>
+          </port>
+          <port name="X">
+            <data key="d4">X</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+            <data key="d16">2</data>
+          </port>
+          <port name="y">
+            <data key="d4">y</data>
+            <data key="d5">input</data>
+            <data key="d8">4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+            <data key="d16">3</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">5</data>
+            <data key="d9">sklearn.svm.classes</data>
+            <data key="d10">SVC</data>
+            <data key="d7">python/sklearn/base-classifier</data>
+          </port>
+          <port name="self!">
+            <data key="d4">self</data>
+            <data key="d5">output</data>
+            <data key="d8">5</data>
+            <data key="d9">sklearn.svm.classes</data>
+            <data key="d10">SVC</data>
+            <data key="d7">python/sklearn/base-classifier</data>
+            <data key="d16">1</data>
+          </port>
+        </node>
+        <node id="slice:3">
+          <data key="d2">builtins</data>
+          <data key="d3">slice</data>
+          <data key="d12">True</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="__tuple__:2">
+          <data key="d2">flowgraph.trace.operator</data>
+          <data key="d3">__tuple__</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">0</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="getitem:2">
+          <data key="d2">_operator</data>
+          <data key="d3">getitem</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">6</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="ndarray.min:1">
+          <data key="d2">numpy</data>
+          <data key="d3">ndarray.min</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">6</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d17">4.3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+        </node>
+        <node id="sub:1">
+          <data key="d2">_operator</data>
+          <data key="d3">sub</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d17">4.3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">1</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d17">3.3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+        </node>
+        <node id="slice:4">
+          <data key="d2">builtins</data>
+          <data key="d3">slice</data>
+          <data key="d12">True</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="__tuple__:3">
+          <data key="d2">flowgraph.trace.operator</data>
+          <data key="d3">__tuple__</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">0</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="getitem:3">
+          <data key="d2">_operator</data>
+          <data key="d3">getitem</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">7</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="ndarray.max:1">
+          <data key="d2">numpy</data>
+          <data key="d3">ndarray.max</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">7</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d17">7.9</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+        </node>
+        <node id="add:1">
+          <data key="d2">_operator</data>
+          <data key="d3">add</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d17">7.9</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">1</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d17">8.9</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+        </node>
+        <node id="slice:5">
+          <data key="d2">builtins</data>
+          <data key="d3">slice</data>
+          <data key="d12">True</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="__tuple__:4">
+          <data key="d2">flowgraph.trace.operator</data>
+          <data key="d3">__tuple__</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">1</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="getitem:4">
+          <data key="d2">_operator</data>
+          <data key="d3">getitem</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">8</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="ndarray.min:2">
+          <data key="d2">numpy</data>
+          <data key="d3">ndarray.min</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">8</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d17">2.0</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+        </node>
+        <node id="sub:2">
+          <data key="d2">_operator</data>
+          <data key="d3">sub</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d17">2.0</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">1</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d17">1.0</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+        </node>
+        <node id="slice:6">
+          <data key="d2">builtins</data>
+          <data key="d3">slice</data>
+          <data key="d12">True</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="__tuple__:5">
+          <data key="d2">flowgraph.trace.operator</data>
+          <data key="d3">__tuple__</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">1</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="getitem:5">
+          <data key="d2">_operator</data>
+          <data key="d3">getitem</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">9</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="ndarray.max:2">
+          <data key="d2">numpy</data>
+          <data key="d3">ndarray.max</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">9</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d17">4.4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+        </node>
+        <node id="add:2">
+          <data key="d2">_operator</data>
+          <data key="d3">add</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d17">4.4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">1</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d17">5.4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+        </node>
+        <node id="arange:1">
+          <data key="d2">numpy.core.multiarray</data>
+          <data key="d3">arange</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d17">3.3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d17">8.9</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="2">
+            <data key="d4">2</data>
+            <data key="d5">input</data>
+            <data key="d17">0.02</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">10</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="arange:2">
+          <data key="d2">numpy.core.multiarray</data>
+          <data key="d3">arange</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d17">1.0</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d17">5.4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">float64</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="2">
+            <data key="d4">2</data>
+            <data key="d5">input</data>
+            <data key="d17">0.02</data>
+            <data key="d7">python/builtins/float</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">11</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="meshgrid:1">
+          <data key="d2">numpy.lib.function_base</data>
+          <data key="d3">meshgrid</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">10</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d8">11</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return.0">
+            <data key="d4">return.0</data>
+            <data key="d5">output</data>
+            <data key="d8">12</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return.1">
+            <data key="d4">return.1</data>
+            <data key="d5">output</data>
+            <data key="d8">13</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="getattr:14">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d11">c_</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d6">numpy</data>
+            <data key="d9">builtins</data>
+            <data key="d10">module</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">c_</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">14</data>
+            <data key="d9">numpy.lib.index_tricks</data>
+            <data key="d10">CClass</data>
+          </port>
+        </node>
+        <node id="ndarray.ravel:1">
+          <data key="d2">numpy</data>
+          <data key="d3">ndarray.ravel</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">12</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">15</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="ndarray.ravel:2">
+          <data key="d2">numpy</data>
+          <data key="d3">ndarray.ravel</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">13</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">16</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="__tuple__:6">
+          <data key="d2">flowgraph.trace.operator</data>
+          <data key="d3">__tuple__</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">15</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d8">16</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="getitem:6">
+          <data key="d2">_operator</data>
+          <data key="d3">getitem</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">14</data>
+            <data key="d9">numpy.lib.index_tricks</data>
+            <data key="d10">CClass</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">17</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="BaseSVC.predict:1">
+          <data key="d2">sklearn.svm.base</data>
+          <data key="d3">BaseSVC.predict</data>
+          <port name="self">
+            <data key="d4">self</data>
+            <data key="d5">input</data>
+            <data key="d8">5</data>
+            <data key="d9">sklearn.svm.classes</data>
+            <data key="d10">SVC</data>
+            <data key="d7">python/sklearn/base-classifier</data>
+          </port>
+          <port name="X">
+            <data key="d4">X</data>
+            <data key="d5">input</data>
+            <data key="d8">17</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">18</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="getattr:18">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d11">shape</data>
+          <data key="d14">python/numpy/ndarray</data>
+          <data key="d18">2</data>
+          <data key="d15">slot</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">12</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">shape</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d19">[220, 280]</data>
+          </port>
+        </node>
+        <node id="ndarray.reshape:1">
+          <data key="d2">numpy</data>
+          <data key="d3">ndarray.reshape</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">18</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d19">[220, 280]</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">19</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="getattr:21">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d11">Paired</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d6">matplotlib.cm</data>
+            <data key="d9">builtins</data>
+            <data key="d10">module</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">Paired</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">20</data>
+            <data key="d9">matplotlib.colors</data>
+            <data key="d10">ListedColormap</data>
+          </port>
+        </node>
+        <node id="pcolormesh:1">
+          <data key="d2">matplotlib.pyplot</data>
+          <data key="d3">pcolormesh</data>
+          <port name="cmap">
+            <data key="d4">cmap</data>
+            <data key="d5">input</data>
+            <data key="d8">20</data>
+            <data key="d9">matplotlib.colors</data>
+            <data key="d10">ListedColormap</data>
+          </port>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">12</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d8">13</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="2">
+            <data key="d4">2</data>
+            <data key="d5">input</data>
+            <data key="d8">19</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">21</data>
+            <data key="d9">matplotlib.collections</data>
+            <data key="d10">QuadMesh</data>
+          </port>
+        </node>
+        <node id="slice:7">
+          <data key="d2">builtins</data>
+          <data key="d3">slice</data>
+          <data key="d12">True</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="__tuple__:7">
+          <data key="d2">flowgraph.trace.operator</data>
+          <data key="d3">__tuple__</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">0</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="getitem:7">
+          <data key="d2">_operator</data>
+          <data key="d3">getitem</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">22</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="slice:8">
+          <data key="d2">builtins</data>
+          <data key="d3">slice</data>
+          <data key="d12">True</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="__tuple__:8">
+          <data key="d2">flowgraph.trace.operator</data>
+          <data key="d3">__tuple__</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d13">1</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+          </port>
+        </node>
+        <node id="getitem:8">
+          <data key="d2">_operator</data>
+          <data key="d3">getitem</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">23</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="getattr:24">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d11">Paired</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d6">matplotlib.cm</data>
+            <data key="d9">builtins</data>
+            <data key="d10">module</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">Paired</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">20</data>
+            <data key="d9">matplotlib.colors</data>
+            <data key="d10">ListedColormap</data>
+          </port>
+        </node>
+        <node id="scatter:1">
+          <data key="d2">matplotlib.pyplot</data>
+          <data key="d3">scatter</data>
+          <port name="x">
+            <data key="d4">x</data>
+            <data key="d5">input</data>
+            <data key="d8">22</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="y">
+            <data key="d4">y</data>
+            <data key="d5">input</data>
+            <data key="d8">23</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="c">
+            <data key="d4">c</data>
+            <data key="d5">input</data>
+            <data key="d8">4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+          <port name="cmap">
+            <data key="d4">cmap</data>
+            <data key="d5">input</data>
+            <data key="d8">20</data>
+            <data key="d9">matplotlib.colors</data>
+            <data key="d10">ListedColormap</data>
+          </port>
+          <port name="edgecolors">
+            <data key="d4">edgecolors</data>
+            <data key="d5">input</data>
+            <data key="d6">k</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">24</data>
+            <data key="d9">matplotlib.collections</data>
+            <data key="d10">PathCollection</data>
+          </port>
+        </node>
+        <node id="title:1">
+          <data key="d2">matplotlib.pyplot</data>
+          <data key="d3">title</data>
+          <port name="label">
+            <data key="d4">label</data>
+            <data key="d5">input</data>
+            <data key="d6">3-Class classification using Support Vector Machine with custom kernel</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">25</data>
+            <data key="d9">matplotlib.text</data>
+            <data key="d10">Text</data>
+          </port>
+        </node>
+        <node id="axis:1">
+          <data key="d2">matplotlib.pyplot</data>
+          <data key="d3">axis</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d6">tight</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d19">[3.3, 8.880000000000006, 1.0, 5.380000000000004]</data>
+          </port>
+        </node>
+        <node id="show:1">
+          <data key="d2">matplotlib.pyplot</data>
+          <data key="d3">show</data>
+        </node>
+        <edge source="load_iris:1" sourceport="return" target="getattr:2" targetport="0">
+          <data key="d20">1</data>
+        </edge>
+        <edge source="load_iris:1" sourceport="return" target="getattr:3" targetport="0">
+          <data key="d20">1</data>
+        </edge>
+        <edge source="getattr:2" sourceport="return" target="getitem:1" targetport="0">
+          <data key="d20">2</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="slice:1" sourceport="return" target="__tuple__:1" targetport="0" />
+        <edge source="slice:2" sourceport="return" target="__tuple__:1" targetport="1" />
+        <edge source="__tuple__:1" sourceport="return" target="getitem:1" targetport="1" />
+        <edge source="getitem:1" sourceport="return" target="BaseLibSVM.fit:1" targetport="X">
+          <data key="d20">3</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getitem:1" sourceport="return" target="getitem:2" targetport="0">
+          <data key="d20">3</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getitem:1" sourceport="return" target="getitem:3" targetport="0">
+          <data key="d20">3</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getitem:1" sourceport="return" target="getitem:4" targetport="0">
+          <data key="d20">3</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getitem:1" sourceport="return" target="getitem:5" targetport="0">
+          <data key="d20">3</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getitem:1" sourceport="return" target="getitem:7" targetport="0">
+          <data key="d20">3</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getitem:1" sourceport="return" target="getitem:8" targetport="0">
+          <data key="d20">3</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getattr:3" sourceport="return" target="BaseLibSVM.fit:1" targetport="y">
+          <data key="d20">4</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getattr:3" sourceport="return" target="scatter:1" targetport="c">
+          <data key="d20">4</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="SVC:1" sourceport="return" target="BaseLibSVM.fit:1" targetport="self">
+          <data key="d20">5</data>
+          <data key="d21">python/sklearn/base-classifier</data>
+        </edge>
+        <edge source="BaseLibSVM.fit:1" sourceport="self!" target="BaseSVC.predict:1" targetport="self">
+          <data key="d20">5</data>
+          <data key="d21">python/sklearn/base-classifier</data>
+        </edge>
+        <edge source="slice:3" sourceport="return" target="__tuple__:2" targetport="0" />
+        <edge source="__tuple__:2" sourceport="return" target="getitem:2" targetport="1" />
+        <edge source="getitem:2" sourceport="return" target="ndarray.min:1" targetport="0">
+          <data key="d20">6</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="ndarray.min:1" sourceport="return" target="sub:1" targetport="0">
+          <data key="d21">python/builtins/float</data>
+        </edge>
+        <edge source="sub:1" sourceport="return" target="arange:1" targetport="0">
+          <data key="d21">python/builtins/float</data>
+        </edge>
+        <edge source="slice:4" sourceport="return" target="__tuple__:3" targetport="0" />
+        <edge source="__tuple__:3" sourceport="return" target="getitem:3" targetport="1" />
+        <edge source="getitem:3" sourceport="return" target="ndarray.max:1" targetport="0">
+          <data key="d20">7</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="ndarray.max:1" sourceport="return" target="add:1" targetport="0">
+          <data key="d21">python/builtins/float</data>
+        </edge>
+        <edge source="add:1" sourceport="return" target="arange:1" targetport="1">
+          <data key="d21">python/builtins/float</data>
+        </edge>
+        <edge source="slice:5" sourceport="return" target="__tuple__:4" targetport="0" />
+        <edge source="__tuple__:4" sourceport="return" target="getitem:4" targetport="1" />
+        <edge source="getitem:4" sourceport="return" target="ndarray.min:2" targetport="0">
+          <data key="d20">8</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="ndarray.min:2" sourceport="return" target="sub:2" targetport="0">
+          <data key="d21">python/builtins/float</data>
+        </edge>
+        <edge source="sub:2" sourceport="return" target="arange:2" targetport="0">
+          <data key="d21">python/builtins/float</data>
+        </edge>
+        <edge source="slice:6" sourceport="return" target="__tuple__:5" targetport="0" />
+        <edge source="__tuple__:5" sourceport="return" target="getitem:5" targetport="1" />
+        <edge source="getitem:5" sourceport="return" target="ndarray.max:2" targetport="0">
+          <data key="d20">9</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="ndarray.max:2" sourceport="return" target="add:2" targetport="0">
+          <data key="d21">python/builtins/float</data>
+        </edge>
+        <edge source="add:2" sourceport="return" target="arange:2" targetport="1">
+          <data key="d21">python/builtins/float</data>
+        </edge>
+        <edge source="arange:1" sourceport="return" target="meshgrid:1" targetport="0">
+          <data key="d20">10</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="arange:2" sourceport="return" target="meshgrid:1" targetport="1">
+          <data key="d20">11</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="meshgrid:1" sourceport="return.0" target="ndarray.ravel:1" targetport="0">
+          <data key="d20">12</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="meshgrid:1" sourceport="return.1" target="ndarray.ravel:2" targetport="0">
+          <data key="d20">13</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="meshgrid:1" sourceport="return.0" target="getattr:18" targetport="0">
+          <data key="d20">12</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="meshgrid:1" sourceport="return.0" target="pcolormesh:1" targetport="0">
+          <data key="d20">12</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="meshgrid:1" sourceport="return.1" target="pcolormesh:1" targetport="1">
+          <data key="d20">13</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getattr:14" sourceport="return" target="getitem:6" targetport="0">
+          <data key="d20">14</data>
+        </edge>
+        <edge source="ndarray.ravel:1" sourceport="return" target="__tuple__:6" targetport="0">
+          <data key="d20">15</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="ndarray.ravel:2" sourceport="return" target="__tuple__:6" targetport="1">
+          <data key="d20">16</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="__tuple__:6" sourceport="return" target="getitem:6" targetport="1" />
+        <edge source="getitem:6" sourceport="return" target="BaseSVC.predict:1" targetport="X">
+          <data key="d20">17</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="BaseSVC.predict:1" sourceport="return" target="ndarray.reshape:1" targetport="0">
+          <data key="d20">18</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getattr:18" sourceport="return" target="ndarray.reshape:1" targetport="1" />
+        <edge source="ndarray.reshape:1" sourceport="return" target="pcolormesh:1" targetport="2">
+          <data key="d20">19</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getattr:21" sourceport="return" target="pcolormesh:1" targetport="cmap">
+          <data key="d20">20</data>
+        </edge>
+        <edge source="slice:7" sourceport="return" target="__tuple__:7" targetport="0" />
+        <edge source="__tuple__:7" sourceport="return" target="getitem:7" targetport="1" />
+        <edge source="getitem:7" sourceport="return" target="scatter:1" targetport="x">
+          <data key="d20">22</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="slice:8" sourceport="return" target="__tuple__:8" targetport="0" />
+        <edge source="__tuple__:8" sourceport="return" target="getitem:8" targetport="1" />
+        <edge source="getitem:8" sourceport="return" target="scatter:1" targetport="y">
+          <data key="d20">23</data>
+          <data key="d21">python/numpy/ndarray</data>
+        </edge>
+        <edge source="getattr:24" sourceport="return" target="scatter:1" targetport="cmap">
+          <data key="d20">20</data>
+        </edge>
+      </graph>
+    </node>
+  </graph>
+</graphml>

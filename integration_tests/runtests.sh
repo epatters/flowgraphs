@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-flowgraphs.jl record python
+flowgraphs.jl record --graph-outputs=simplify python
 flowgraphs.jl record r
 
 flowgraphs.jl enrich python

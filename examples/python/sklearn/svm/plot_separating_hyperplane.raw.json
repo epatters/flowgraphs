@@ -1,0 +1,2257 @@
+{
+  "id": "root",
+  "ports": [],
+  "children": [
+    {
+      "id": "n3",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": "\n=========================================\nSVM: Maximum margin separating hyperplane\n=========================================\n\nPlot the maximum margin separating hyperplane within a two-class\nseparable dataset using a Support Vector Machine classifier with\nlinear kernel.\n",
+            "annotation": "python/builtins/str",
+            "argname": "0"
+          }
+        }
+      ],
+      "properties": {
+        "module": "builtins",
+        "qual_name": "print"
+      }
+    },
+    {
+      "id": "n4",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": 40,
+            "annotation": "python/builtins/int",
+            "argname": "n_samples"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 2,
+            "annotation": "python/builtins/int",
+            "argname": "centers"
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "value": 6,
+            "annotation": "python/builtins/int",
+            "argname": "random_state"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "1",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return.0"
+          }
+        },
+        {
+          "id": "out2",
+          "portkind": "output",
+          "properties": {
+            "id": "2",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return.1"
+          }
+        }
+      ],
+      "properties": {
+        "module": "sklearn.datasets.samples_generator",
+        "qual_name": "make_blobs"
+      }
+    },
+    {
+      "id": "n5",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": 1000,
+            "annotation": "python/builtins/int",
+            "argname": "C"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": "linear",
+            "annotation": "python/builtins/str",
+            "argname": "kernel"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "3",
+            "module": "sklearn.svm.classes",
+            "annotation": "python/sklearn/base-classifier",
+            "qual_name": "SVC",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "annotation_kind": "construct",
+        "module": "sklearn.svm.classes",
+        "annotation": "python/sklearn/base-classifier",
+        "qual_name": "SVC"
+      }
+    },
+    {
+      "id": "n6",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "3",
+            "module": "sklearn.svm.classes",
+            "annotation": "python/sklearn/base-classifier",
+            "qual_name": "SVC",
+            "argname": "self",
+            "annotation_index": 1
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "id": "1",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "X",
+            "annotation_index": 2
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "id": "2",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "y",
+            "annotation_index": 3
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "3",
+            "module": "sklearn.svm.classes",
+            "annotation": "python/sklearn/base-classifier",
+            "qual_name": "SVC",
+            "argname": "return"
+          }
+        },
+        {
+          "id": "out2",
+          "portkind": "output",
+          "properties": {
+            "id": "3",
+            "module": "sklearn.svm.classes",
+            "annotation": "python/sklearn/base-classifier",
+            "qual_name": "SVC",
+            "argname": "self",
+            "annotation_index": 1
+          }
+        }
+      ],
+      "properties": {
+        "annotation_kind": "function",
+        "module": "sklearn.svm.base",
+        "annotation": "python/sklearn/fit-classification",
+        "qual_name": "BaseLibSVM.fit"
+      }
+    },
+    {
+      "id": "n7",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "0"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "construct": true,
+        "module": "builtins",
+        "qual_name": "slice"
+      }
+    },
+    {
+      "id": "n8",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 0,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "flowgraph.trace.operator",
+        "qual_name": "__tuple__"
+      }
+    },
+    {
+      "id": "n9",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "1",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "4",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "_operator",
+        "qual_name": "getitem"
+      }
+    },
+    {
+      "id": "n10",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "0"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "construct": true,
+        "module": "builtins",
+        "qual_name": "slice"
+      }
+    },
+    {
+      "id": "n11",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 1,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "flowgraph.trace.operator",
+        "qual_name": "__tuple__"
+      }
+    },
+    {
+      "id": "n12",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "1",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "5",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "_operator",
+        "qual_name": "getitem"
+      }
+    },
+    {
+      "id": "n13",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "module": "builtins",
+            "value": "matplotlib.cm",
+            "qual_name": "module",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": "Paired",
+            "annotation": "python/builtins/str",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "6",
+            "module": "matplotlib.colors",
+            "qual_name": "ListedColormap",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "builtins",
+        "slot": "Paired",
+        "qual_name": "getattr"
+      }
+    },
+    {
+      "id": "n14",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "4",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "x"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "id": "5",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "y"
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "value": 30,
+            "annotation": "python/builtins/int",
+            "argname": "s"
+          }
+        },
+        {
+          "id": "in4",
+          "portkind": "input",
+          "properties": {
+            "id": "2",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "c"
+          }
+        },
+        {
+          "id": "in5",
+          "portkind": "input",
+          "properties": {
+            "id": "6",
+            "module": "matplotlib.colors",
+            "qual_name": "ListedColormap",
+            "argname": "cmap"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "7",
+            "module": "matplotlib.collections",
+            "qual_name": "PathCollection",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "matplotlib.pyplot",
+        "qual_name": "scatter"
+      }
+    },
+    {
+      "id": "n15",
+      "ports": [
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "8",
+            "module": "matplotlib.axes._subplots",
+            "qual_name": "AxesSubplot",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "matplotlib.pyplot",
+        "qual_name": "gca"
+      }
+    },
+    {
+      "id": "n16",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "8",
+            "module": "matplotlib.axes._subplots",
+            "qual_name": "AxesSubplot",
+            "argname": "self"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "value": [
+              3.976374301845057,
+              10.80436834848946
+            ],
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "matplotlib.axes._base",
+        "qual_name": "_AxesBase.get_xlim"
+      }
+    },
+    {
+      "id": "n17",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "8",
+            "module": "matplotlib.axes._subplots",
+            "qual_name": "AxesSubplot",
+            "argname": "self"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "value": [
+              -11.076622589861897,
+              -1.0862982622797808
+            ],
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "matplotlib.axes._base",
+        "qual_name": "_AxesBase.get_ylim"
+      }
+    },
+    {
+      "id": "n18",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": [
+              3.976374301845057,
+              10.80436834848946
+            ],
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 0,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "module": "numpy",
+            "value": 3.976374301845057,
+            "annotation": "python/builtins/float",
+            "qual_name": "float64",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "_operator",
+        "qual_name": "getitem"
+      }
+    },
+    {
+      "id": "n19",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": [
+              3.976374301845057,
+              10.80436834848946
+            ],
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 1,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "module": "numpy",
+            "value": 10.80436834848946,
+            "annotation": "python/builtins/float",
+            "qual_name": "float64",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "_operator",
+        "qual_name": "getitem"
+      }
+    },
+    {
+      "id": "n20",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "module": "numpy",
+            "value": 3.976374301845057,
+            "annotation": "python/builtins/float",
+            "qual_name": "float64",
+            "argname": "start"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "module": "numpy",
+            "value": 10.80436834848946,
+            "annotation": "python/builtins/float",
+            "qual_name": "float64",
+            "argname": "stop"
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "value": 30,
+            "annotation": "python/builtins/int",
+            "argname": "num"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "9",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "numpy.core.function_base",
+        "qual_name": "linspace"
+      }
+    },
+    {
+      "id": "n21",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": [
+              -11.076622589861897,
+              -1.0862982622797808
+            ],
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 0,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "module": "numpy",
+            "value": -11.076622589861897,
+            "annotation": "python/builtins/float",
+            "qual_name": "float64",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "_operator",
+        "qual_name": "getitem"
+      }
+    },
+    {
+      "id": "n22",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": [
+              -11.076622589861897,
+              -1.0862982622797808
+            ],
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 1,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "module": "numpy",
+            "value": -1.0862982622797808,
+            "annotation": "python/builtins/float",
+            "qual_name": "float64",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "_operator",
+        "qual_name": "getitem"
+      }
+    },
+    {
+      "id": "n23",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "module": "numpy",
+            "value": -11.076622589861897,
+            "annotation": "python/builtins/float",
+            "qual_name": "float64",
+            "argname": "start"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "module": "numpy",
+            "value": -1.0862982622797808,
+            "annotation": "python/builtins/float",
+            "qual_name": "float64",
+            "argname": "stop"
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "value": 30,
+            "annotation": "python/builtins/int",
+            "argname": "num"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "10",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "numpy.core.function_base",
+        "qual_name": "linspace"
+      }
+    },
+    {
+      "id": "n24",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "10",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "id": "9",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "11",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return.0"
+          }
+        },
+        {
+          "id": "out2",
+          "portkind": "output",
+          "properties": {
+            "id": "12",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return.1"
+          }
+        }
+      ],
+      "properties": {
+        "module": "numpy.lib.function_base",
+        "qual_name": "meshgrid"
+      }
+    },
+    {
+      "id": "n25",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "12",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "13",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "numpy",
+        "qual_name": "ndarray.ravel"
+      }
+    },
+    {
+      "id": "n26",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "11",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "14",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "numpy",
+        "qual_name": "ndarray.ravel"
+      }
+    },
+    {
+      "id": "n27",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "13",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "id": "14",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "flowgraph.trace.operator",
+        "qual_name": "__list__"
+      }
+    },
+    {
+      "id": "n28",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "tup"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "15",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "numpy.core.shape_base",
+        "qual_name": "vstack"
+      }
+    },
+    {
+      "id": "n29",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "15",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": "T",
+            "annotation": "python/builtins/str",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "16",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "builtins",
+        "slot": "T",
+        "qual_name": "getattr"
+      }
+    },
+    {
+      "id": "n30",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "3",
+            "module": "sklearn.svm.classes",
+            "annotation": "python/sklearn/base-classifier",
+            "qual_name": "SVC",
+            "argname": "self"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "id": "16",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "X"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "17",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "sklearn.svm.base",
+        "qual_name": "BaseSVC.decision_function"
+      }
+    },
+    {
+      "id": "n31",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "12",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": "shape",
+            "annotation": "python/builtins/str",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "value": [
+              30,
+              30
+            ],
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "annotation_kind": "slot",
+        "module": "builtins",
+        "slot": "shape",
+        "annotation": "python/numpy/ndarray",
+        "qual_name": "getattr",
+        "annotation_index": 2
+      }
+    },
+    {
+      "id": "n32",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "17",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": [
+              30,
+              30
+            ],
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "18",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "numpy",
+        "qual_name": "ndarray.reshape"
+      }
+    },
+    {
+      "id": "n33",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": -1,
+            "annotation": "python/builtins/int",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 0,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "value": 1,
+            "annotation": "python/builtins/int",
+            "argname": "2"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "value": [
+              -1,
+              0,
+              1
+            ],
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "flowgraph.trace.operator",
+        "qual_name": "__list__"
+      }
+    },
+    {
+      "id": "n34",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "value": "--",
+            "annotation": "python/builtins/str",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": "-",
+            "annotation": "python/builtins/str",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "value": "--",
+            "annotation": "python/builtins/str",
+            "argname": "2"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "value": [
+              "--",
+              "-",
+              "--"
+            ],
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "flowgraph.trace.operator",
+        "qual_name": "__list__"
+      }
+    },
+    {
+      "id": "n35",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "8",
+            "module": "matplotlib.axes._subplots",
+            "qual_name": "AxesSubplot",
+            "argname": "self"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "id": "12",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "id": "11",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "in4",
+          "portkind": "input",
+          "properties": {
+            "id": "18",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "2"
+          }
+        },
+        {
+          "id": "in5",
+          "portkind": "input",
+          "properties": {
+            "value": "k",
+            "annotation": "python/builtins/str",
+            "argname": "colors"
+          }
+        },
+        {
+          "id": "in6",
+          "portkind": "input",
+          "properties": {
+            "value": [
+              -1,
+              0,
+              1
+            ],
+            "argname": "levels"
+          }
+        },
+        {
+          "id": "in7",
+          "portkind": "input",
+          "properties": {
+            "value": 0.5,
+            "annotation": "python/builtins/float",
+            "argname": "alpha"
+          }
+        },
+        {
+          "id": "in8",
+          "portkind": "input",
+          "properties": {
+            "value": [
+              "--",
+              "-",
+              "--"
+            ],
+            "argname": "linestyles"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "19",
+            "module": "matplotlib.contour",
+            "qual_name": "QuadContourSet",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "matplotlib.axes._axes",
+        "qual_name": "Axes.contour"
+      }
+    },
+    {
+      "id": "n36",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "3",
+            "module": "sklearn.svm.classes",
+            "annotation": "python/sklearn/base-classifier",
+            "qual_name": "SVC",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": "support_vectors_",
+            "annotation": "python/builtins/str",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "20",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "builtins",
+        "slot": "support_vectors_",
+        "qual_name": "getattr"
+      }
+    },
+    {
+      "id": "n37",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "0"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "construct": true,
+        "module": "builtins",
+        "qual_name": "slice"
+      }
+    },
+    {
+      "id": "n38",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 0,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "flowgraph.trace.operator",
+        "qual_name": "__tuple__"
+      }
+    },
+    {
+      "id": "n39",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "20",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "21",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "_operator",
+        "qual_name": "getitem"
+      }
+    },
+    {
+      "id": "n40",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "3",
+            "module": "sklearn.svm.classes",
+            "annotation": "python/sklearn/base-classifier",
+            "qual_name": "SVC",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": "support_vectors_",
+            "annotation": "python/builtins/str",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "20",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "builtins",
+        "slot": "support_vectors_",
+        "qual_name": "getattr"
+      }
+    },
+    {
+      "id": "n41",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "0"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "construct": true,
+        "module": "builtins",
+        "qual_name": "slice"
+      }
+    },
+    {
+      "id": "n42",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "value": 1,
+            "annotation": "python/builtins/int",
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "flowgraph.trace.operator",
+        "qual_name": "__tuple__"
+      }
+    },
+    {
+      "id": "n43",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "20",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "0"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "argname": "1"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "22",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "_operator",
+        "qual_name": "getitem"
+      }
+    },
+    {
+      "id": "n44",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "id": "8",
+            "module": "matplotlib.axes._subplots",
+            "qual_name": "AxesSubplot",
+            "argname": "self"
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "id": "21",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "x"
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "id": "22",
+            "module": "numpy",
+            "annotation": "python/numpy/ndarray",
+            "qual_name": "ndarray",
+            "argname": "y"
+          }
+        },
+        {
+          "id": "in4",
+          "portkind": "input",
+          "properties": {
+            "value": 100,
+            "annotation": "python/builtins/int",
+            "argname": "s"
+          }
+        },
+        {
+          "id": "in5",
+          "portkind": "input",
+          "properties": {
+            "value": "k",
+            "annotation": "python/builtins/str",
+            "argname": "edgecolors"
+          }
+        },
+        {
+          "id": "in6",
+          "portkind": "input",
+          "properties": {
+            "value": 1,
+            "annotation": "python/builtins/int",
+            "argname": "linewidth"
+          }
+        },
+        {
+          "id": "in7",
+          "portkind": "input",
+          "properties": {
+            "value": "none",
+            "annotation": "python/builtins/str",
+            "argname": "facecolors"
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "id": "23",
+            "module": "matplotlib.collections",
+            "qual_name": "PathCollection",
+            "argname": "return"
+          }
+        }
+      ],
+      "properties": {
+        "module": "matplotlib.axes._axes",
+        "qual_name": "Axes.scatter"
+      }
+    },
+    {
+      "id": "n45",
+      "ports": [],
+      "properties": {
+        "module": "matplotlib.pyplot",
+        "qual_name": "show"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n4",
+      "sourcePort": "out1",
+      "target": "n6",
+      "targetPort": "in2",
+      "properties": {
+        "id": "1",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n4",
+      "sourcePort": "out2",
+      "target": "n6",
+      "targetPort": "in3",
+      "properties": {
+        "id": "2",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "sourcePort": "out1",
+      "target": "n9",
+      "targetPort": "in1",
+      "properties": {
+        "id": "1",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e4",
+      "source": "n4",
+      "sourcePort": "out1",
+      "target": "n12",
+      "targetPort": "in1",
+      "properties": {
+        "id": "1",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e5",
+      "source": "n4",
+      "sourcePort": "out2",
+      "target": "n14",
+      "targetPort": "in4",
+      "properties": {
+        "id": "2",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e6",
+      "source": "n5",
+      "sourcePort": "out1",
+      "target": "n6",
+      "targetPort": "in1",
+      "properties": {
+        "id": "3",
+        "annotation": "python/sklearn/base-classifier"
+      }
+    },
+    {
+      "id": "e7",
+      "source": "n6",
+      "sourcePort": "out2",
+      "target": "n30",
+      "targetPort": "in1",
+      "properties": {
+        "id": "3",
+        "annotation": "python/sklearn/base-classifier"
+      }
+    },
+    {
+      "id": "e8",
+      "source": "n6",
+      "sourcePort": "out2",
+      "target": "n36",
+      "targetPort": "in1",
+      "properties": {
+        "id": "3",
+        "annotation": "python/sklearn/base-classifier"
+      }
+    },
+    {
+      "id": "e9",
+      "source": "n6",
+      "sourcePort": "out2",
+      "target": "n40",
+      "targetPort": "in1",
+      "properties": {
+        "id": "3",
+        "annotation": "python/sklearn/base-classifier"
+      }
+    },
+    {
+      "id": "e10",
+      "source": "n7",
+      "sourcePort": "out1",
+      "target": "n8",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e11",
+      "source": "n8",
+      "sourcePort": "out1",
+      "target": "n9",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e12",
+      "source": "n9",
+      "sourcePort": "out1",
+      "target": "n14",
+      "targetPort": "in1",
+      "properties": {
+        "id": "4",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e13",
+      "source": "n10",
+      "sourcePort": "out1",
+      "target": "n11",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e14",
+      "source": "n11",
+      "sourcePort": "out1",
+      "target": "n12",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e15",
+      "source": "n12",
+      "sourcePort": "out1",
+      "target": "n14",
+      "targetPort": "in2",
+      "properties": {
+        "id": "5",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e16",
+      "source": "n13",
+      "sourcePort": "out1",
+      "target": "n14",
+      "targetPort": "in5",
+      "properties": {
+        "id": "6"
+      }
+    },
+    {
+      "id": "e17",
+      "source": "n15",
+      "sourcePort": "out1",
+      "target": "n16",
+      "targetPort": "in1",
+      "properties": {
+        "id": "8"
+      }
+    },
+    {
+      "id": "e18",
+      "source": "n15",
+      "sourcePort": "out1",
+      "target": "n17",
+      "targetPort": "in1",
+      "properties": {
+        "id": "8"
+      }
+    },
+    {
+      "id": "e19",
+      "source": "n15",
+      "sourcePort": "out1",
+      "target": "n35",
+      "targetPort": "in1",
+      "properties": {
+        "id": "8"
+      }
+    },
+    {
+      "id": "e20",
+      "source": "n15",
+      "sourcePort": "out1",
+      "target": "n44",
+      "targetPort": "in1",
+      "properties": {
+        "id": "8"
+      }
+    },
+    {
+      "id": "e21",
+      "source": "n16",
+      "sourcePort": "out1",
+      "target": "n18",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e22",
+      "source": "n16",
+      "sourcePort": "out1",
+      "target": "n19",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e23",
+      "source": "n17",
+      "sourcePort": "out1",
+      "target": "n21",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e24",
+      "source": "n17",
+      "sourcePort": "out1",
+      "target": "n22",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e25",
+      "source": "n18",
+      "sourcePort": "out1",
+      "target": "n20",
+      "targetPort": "in1",
+      "properties": {
+        "annotation": "python/builtins/float"
+      }
+    },
+    {
+      "id": "e26",
+      "source": "n19",
+      "sourcePort": "out1",
+      "target": "n20",
+      "targetPort": "in2",
+      "properties": {
+        "annotation": "python/builtins/float"
+      }
+    },
+    {
+      "id": "e27",
+      "source": "n20",
+      "sourcePort": "out1",
+      "target": "n24",
+      "targetPort": "in2",
+      "properties": {
+        "id": "9",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e28",
+      "source": "n21",
+      "sourcePort": "out1",
+      "target": "n23",
+      "targetPort": "in1",
+      "properties": {
+        "annotation": "python/builtins/float"
+      }
+    },
+    {
+      "id": "e29",
+      "source": "n22",
+      "sourcePort": "out1",
+      "target": "n23",
+      "targetPort": "in2",
+      "properties": {
+        "annotation": "python/builtins/float"
+      }
+    },
+    {
+      "id": "e30",
+      "source": "n23",
+      "sourcePort": "out1",
+      "target": "n24",
+      "targetPort": "in1",
+      "properties": {
+        "id": "10",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e31",
+      "source": "n24",
+      "sourcePort": "out2",
+      "target": "n25",
+      "targetPort": "in1",
+      "properties": {
+        "id": "12",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e32",
+      "source": "n24",
+      "sourcePort": "out1",
+      "target": "n26",
+      "targetPort": "in1",
+      "properties": {
+        "id": "11",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e33",
+      "source": "n24",
+      "sourcePort": "out2",
+      "target": "n31",
+      "targetPort": "in1",
+      "properties": {
+        "id": "12",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e34",
+      "source": "n24",
+      "sourcePort": "out2",
+      "target": "n35",
+      "targetPort": "in2",
+      "properties": {
+        "id": "12",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e35",
+      "source": "n24",
+      "sourcePort": "out1",
+      "target": "n35",
+      "targetPort": "in3",
+      "properties": {
+        "id": "11",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e36",
+      "source": "n25",
+      "sourcePort": "out1",
+      "target": "n27",
+      "targetPort": "in1",
+      "properties": {
+        "id": "13",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e37",
+      "source": "n26",
+      "sourcePort": "out1",
+      "target": "n27",
+      "targetPort": "in2",
+      "properties": {
+        "id": "14",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e38",
+      "source": "n27",
+      "sourcePort": "out1",
+      "target": "n28",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e39",
+      "source": "n28",
+      "sourcePort": "out1",
+      "target": "n29",
+      "targetPort": "in1",
+      "properties": {
+        "id": "15",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e40",
+      "source": "n29",
+      "sourcePort": "out1",
+      "target": "n30",
+      "targetPort": "in2",
+      "properties": {
+        "id": "16",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e41",
+      "source": "n30",
+      "sourcePort": "out1",
+      "target": "n32",
+      "targetPort": "in1",
+      "properties": {
+        "id": "17",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e42",
+      "source": "n31",
+      "sourcePort": "out1",
+      "target": "n32",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e43",
+      "source": "n32",
+      "sourcePort": "out1",
+      "target": "n35",
+      "targetPort": "in4",
+      "properties": {
+        "id": "18",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e44",
+      "source": "n33",
+      "sourcePort": "out1",
+      "target": "n35",
+      "targetPort": "in6"
+    },
+    {
+      "id": "e45",
+      "source": "n34",
+      "sourcePort": "out1",
+      "target": "n35",
+      "targetPort": "in8"
+    },
+    {
+      "id": "e46",
+      "source": "n36",
+      "sourcePort": "out1",
+      "target": "n39",
+      "targetPort": "in1",
+      "properties": {
+        "id": "20",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e47",
+      "source": "n37",
+      "sourcePort": "out1",
+      "target": "n38",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e48",
+      "source": "n38",
+      "sourcePort": "out1",
+      "target": "n39",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e49",
+      "source": "n39",
+      "sourcePort": "out1",
+      "target": "n44",
+      "targetPort": "in2",
+      "properties": {
+        "id": "21",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e50",
+      "source": "n40",
+      "sourcePort": "out1",
+      "target": "n43",
+      "targetPort": "in1",
+      "properties": {
+        "id": "20",
+        "annotation": "python/numpy/ndarray"
+      }
+    },
+    {
+      "id": "e51",
+      "source": "n41",
+      "sourcePort": "out1",
+      "target": "n42",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e52",
+      "source": "n42",
+      "sourcePort": "out1",
+      "target": "n43",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e53",
+      "source": "n43",
+      "sourcePort": "out1",
+      "target": "n44",
+      "targetPort": "in3",
+      "properties": {
+        "id": "22",
+        "annotation": "python/numpy/ndarray"
+      }
+    }
+  ]
+}

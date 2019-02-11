@@ -15,19 +15,10 @@
 module TestRFlowGraphs
 using Test
 
-using Catlab.Diagram
+using Catlab.WiringDiagrams
 using SemanticFlowGraphs
 
-import ..IntegrationTest: db
-
-const r_dir = joinpath(@__DIR__, "r")
-
-function read_r_raw_graph(name::String)
-  rem_literals!(read_raw_graph(joinpath(r_dir, "$name.R.graphml")))
-end
-function read_r_semantic_graph(name::String)
-  read_semantic_graph(joinpath(r_dir, "$name.graphml"); elements=false)
-end
+using ..IntegrationTest: db, read_semantic_graph
 
 # Semantic flow graph
 #####################
@@ -35,7 +26,7 @@ end
 # K-means clustering on the Iris dataset using base R.
 # FIXME: The encapsulated box should only have one input port.
 # FIXME: Box order, as noted in PyFlowGraphs.
-semantic = read_r_semantic_graph("clustering_kmeans")
+semantic = read_semantic_graph(joinpath("r", "clustering_kmeans"))
 d = WiringDiagram([], [])
 kmeans = add_box!(d, construct(pair(concepts(db,
   ["k-means", "clustering-model-n-clusters"])...)))

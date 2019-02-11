@@ -16,25 +16,16 @@ module TestPyFlowGraphs
 using Test
 using Nullables
 
-using Catlab.Diagram
+using Catlab.WiringDiagrams
 using SemanticFlowGraphs
 
-import ..IntegrationTest: db
-
-const py_dir = joinpath(@__DIR__, "python")
-
-function read_py_raw_graph(name::String)
-  read_raw_graph(joinpath(py_dir, "$name.py.graphml"))
-end
-function read_py_semantic_graph(name::String)
-  read_semantic_graph(joinpath(py_dir, "$name.graphml"); elements=false)
-end
+using ..IntegrationTest: db, read_raw_graph, read_semantic_graph
 
 # Raw flow graph
 ################
 
 # Deserialize Python raw flow graph from GraphML.
-diagram = read_py_raw_graph("pandas_read_sql")
+diagram = read_raw_graph(joinpath("python", "pandas_read_sql"))
 @test nboxes(diagram) == 2
 b1, b2 = boxes(diagram)
 @test isnull(b1.value.annotation)
@@ -50,7 +41,7 @@ b1, b2 = boxes(diagram)
 #####################
 
 # Read SQL table using pandas and SQLAlchemy.
-semantic = read_py_semantic_graph("pandas_read_sql")
+semantic = read_semantic_graph(joinpath("python", "pandas_read_sql"))
 d = WiringDiagram([], concepts(db, ["table"]))
 engine = add_box!(d, Box([], concepts(db, ["sql-database"])))
 cons = add_box!(d, construct(pair(concept(db, "sql-table-database"),
@@ -66,7 +57,7 @@ add_wires!(d, [
 # K-means clustering on the Iris dataset using NumPy and SciPy.
 # FIXME: The boxes are added to `d` in the exact order of `semantic`. That
 # won't be necessary when we implement graph isomorphism for wiring diagrams.
-semantic = read_py_semantic_graph("scipy_clustering_kmeans")
+semantic = read_semantic_graph(joinpath("python", "scipy_clustering_kmeans"))
 kmeans_fit = Hom("fit",
   otimes(concept(db, "k-means"), concept(db, "data")),
   concept(db, "k-means"))
@@ -92,7 +83,7 @@ add_wires!(d, [
 @test semantic == d
 
 # K-means clustering on the Iris dataset using pandas and scikit-learn.
-semantic = read_py_semantic_graph("sklearn_clustering_kmeans")
+semantic = read_semantic_graph(joinpath("python", "sklearn_clustering_kmeans"))
 d = WiringDiagram([], concepts(db, ["array"]))
 file = add_box!(d, construct(pair(concepts(db, ["tabular-file", "filename"])...)))
 read_file = add_box!(d, concept(db, "read-tabular-file"))
@@ -112,7 +103,7 @@ add_wires!(d, [
 
 # Compare sklearn clustering models using a cluster similarity metric.
 # FIXME: Box order, as mentioned above.
-semantic = read_py_semantic_graph("sklearn_clustering_metrics")
+semantic = read_semantic_graph(joinpath("python", "sklearn_clustering_metrics"))
 clustering_fit = Hom("fit",
   otimes(concept(db, "clustering-model"), concept(db, "data")),
   concept(db, "clustering-model"))
@@ -141,7 +132,7 @@ add_wires!(d, [
 @test semantic == d
 
 # Errors metrics for linear regression using sklearn.
-semantic = read_py_semantic_graph("sklearn_regression_metrics")
+semantic = read_semantic_graph(joinpath("python", "sklearn_regression_metrics"))
 d = WiringDiagram([], [])
 file = add_box!(d, construct(pair(concepts(db, ["tabular-file", "filename"])...)))
 data_x = add_box!(d, Box(concepts(db, ["table"]), concepts(db, ["table"])))
@@ -169,7 +160,7 @@ add_wires!(d, [
 @test semantic == d
 
 # Linear regression on an R dataset using statsmodels.
-semantic = read_py_semantic_graph("statsmodels_regression")
+semantic = read_semantic_graph(joinpath("python", "statsmodels_regression"))
 d = WiringDiagram([], concepts(db, ["linear-regression"]))
 r_data = add_box!(d, construct(pair(concept(db, "r-dataset-name"),
                                     concept(db, "r-dataset-package"))))

@@ -1,0 +1,738 @@
+{
+  "id": "root",
+  "ports": [],
+  "children": [
+    {
+      "id": "n3",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "Hom",
+          "predict",
+          [
+            "otimes",
+            [
+              "Ob",
+              "supervised-model"
+            ],
+            [
+              "Ob",
+              "data"
+            ]
+          ],
+          [
+            "Ob",
+            "data"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "n4",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "Hom",
+          "fit-supervised",
+          [
+            "otimes",
+            [
+              "Ob",
+              "supervised-model"
+            ],
+            [
+              "Ob",
+              "data"
+            ],
+            [
+              "Ob",
+              "data"
+            ]
+          ],
+          [
+            "Ob",
+            "supervised-model"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "n5",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "Hom",
+          "predict",
+          [
+            "otimes",
+            [
+              "Ob",
+              "supervised-model"
+            ],
+            [
+              "Ob",
+              "data"
+            ]
+          ],
+          [
+            "Ob",
+            "data"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "n6",
+      "ports": [
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "array"
+            ]
+          }
+        },
+        {
+          "id": "out2",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "array"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "n7",
+      "ports": []
+    },
+    {
+      "id": "n8",
+      "ports": []
+    },
+    {
+      "id": "n9",
+      "ports": []
+    },
+    {
+      "id": "n10",
+      "ports": []
+    },
+    {
+      "id": "n11",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "array"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "array"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "n12",
+      "ports": []
+    },
+    {
+      "id": "n13",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "array"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "array"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "n14",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "array"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "array"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "n15",
+      "ports": []
+    },
+    {
+      "id": "n16",
+      "ports": [
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "support-vector-regression"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "construct",
+          [
+            "delete",
+            [
+              "Ob",
+              "support-vector-regression"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "n17",
+      "ports": [
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "support-vector-regression"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "construct",
+          [
+            "delete",
+            [
+              "Ob",
+              "support-vector-regression"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "n18",
+      "ports": [
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "support-vector-regression"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "construct",
+          [
+            "delete",
+            [
+              "Ob",
+              "support-vector-regression"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "n19",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "Hom",
+          "fit-supervised",
+          [
+            "otimes",
+            [
+              "Ob",
+              "supervised-model"
+            ],
+            [
+              "Ob",
+              "data"
+            ],
+            [
+              "Ob",
+              "data"
+            ]
+          ],
+          [
+            "Ob",
+            "supervised-model"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "n20",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "Hom",
+          "predict",
+          [
+            "otimes",
+            [
+              "Ob",
+              "supervised-model"
+            ],
+            [
+              "Ob",
+              "data"
+            ]
+          ],
+          [
+            "Ob",
+            "data"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "n21",
+      "ports": [
+        {
+          "id": "in1",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        },
+        {
+          "id": "in2",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "in3",
+          "portkind": "input",
+          "properties": {
+            "ob": [
+              "Ob",
+              "data"
+            ]
+          }
+        },
+        {
+          "id": "out1",
+          "portkind": "output",
+          "properties": {
+            "ob": [
+              "Ob",
+              "supervised-model"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "hom": [
+          "Hom",
+          "fit-supervised",
+          [
+            "otimes",
+            [
+              "Ob",
+              "supervised-model"
+            ],
+            [
+              "Ob",
+              "data"
+            ],
+            [
+              "Ob",
+              "data"
+            ]
+          ],
+          [
+            "Ob",
+            "supervised-model"
+          ]
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "sourcePort": "out1",
+      "target": "n14",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e2",
+      "source": "n4",
+      "sourcePort": "out1",
+      "target": "n5",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e3",
+      "source": "n5",
+      "sourcePort": "out1",
+      "target": "n13",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e4",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n3",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e5",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n4",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e6",
+      "source": "n6",
+      "sourcePort": "out2",
+      "target": "n4",
+      "targetPort": "in3"
+    },
+    {
+      "id": "e7",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n5",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e8",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n11",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e9",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n13",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e10",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n14",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e11",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n19",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e12",
+      "source": "n6",
+      "sourcePort": "out2",
+      "target": "n19",
+      "targetPort": "in3"
+    },
+    {
+      "id": "e13",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n20",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e14",
+      "source": "n6",
+      "sourcePort": "out1",
+      "target": "n21",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e15",
+      "source": "n6",
+      "sourcePort": "out2",
+      "target": "n21",
+      "targetPort": "in3"
+    },
+    {
+      "id": "e16",
+      "source": "n16",
+      "sourcePort": "out1",
+      "target": "n19",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e17",
+      "source": "n17",
+      "sourcePort": "out1",
+      "target": "n21",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e18",
+      "source": "n18",
+      "sourcePort": "out1",
+      "target": "n4",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e19",
+      "source": "n19",
+      "sourcePort": "out1",
+      "target": "n20",
+      "targetPort": "in1"
+    },
+    {
+      "id": "e20",
+      "source": "n20",
+      "sourcePort": "out1",
+      "target": "n11",
+      "targetPort": "in2"
+    },
+    {
+      "id": "e21",
+      "source": "n21",
+      "sourcePort": "out1",
+      "target": "n3",
+      "targetPort": "in1"
+    }
+  ]
+}

@@ -861,7 +861,7 @@
           "properties": {
             "id": "17",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-estimator",
+            "annotation": "python/sklearn/base-svm",
             "qual_name": "OneClassSVM",
             "argname": "return"
           }
@@ -870,7 +870,7 @@
       "properties": {
         "annotation_kind": "construct",
         "module": "sklearn.svm.classes",
-        "annotation": "python/sklearn/base-estimator",
+        "annotation": "python/sklearn/base-svm",
         "qual_name": "OneClassSVM"
       }
     },
@@ -883,7 +883,7 @@
           "properties": {
             "id": "17",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-estimator",
+            "annotation": "python/sklearn/base-svm",
             "qual_name": "OneClassSVM",
             "argname": "self",
             "annotation_index": 1
@@ -907,7 +907,7 @@
           "properties": {
             "id": "17",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-estimator",
+            "annotation": "python/sklearn/base-svm",
             "qual_name": "OneClassSVM",
             "argname": "return"
           }
@@ -918,7 +918,7 @@
           "properties": {
             "id": "17",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-estimator",
+            "annotation": "python/sklearn/base-svm",
             "qual_name": "OneClassSVM",
             "argname": "self",
             "annotation_index": 1
@@ -941,7 +941,7 @@
           "properties": {
             "id": "17",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-estimator",
+            "annotation": "python/sklearn/base-svm",
             "qual_name": "OneClassSVM",
             "argname": "self"
           }
@@ -983,7 +983,7 @@
           "properties": {
             "id": "17",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-estimator",
+            "annotation": "python/sklearn/base-svm",
             "qual_name": "OneClassSVM",
             "argname": "self"
           }
@@ -1025,7 +1025,7 @@
           "properties": {
             "id": "17",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-estimator",
+            "annotation": "python/sklearn/base-svm",
             "qual_name": "OneClassSVM",
             "argname": "self"
           }
@@ -1167,7 +1167,7 @@
           "id": "out1",
           "portkind": "output",
           "properties": {
-            "value": 23,
+            "value": 20,
             "annotation": "python/builtins/int",
             "argname": "return"
           }
@@ -1288,7 +1288,7 @@
           "id": "out1",
           "portkind": "output",
           "properties": {
-            "value": 6,
+            "value": 5,
             "annotation": "python/builtins/int",
             "argname": "return"
           }
@@ -1409,7 +1409,7 @@
           "id": "out1",
           "portkind": "output",
           "properties": {
-            "value": 1,
+            "value": 0,
             "annotation": "python/builtins/int",
             "argname": "return"
           }
@@ -1606,7 +1606,7 @@
           "properties": {
             "id": "17",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-estimator",
+            "annotation": "python/sklearn/base-svm",
             "qual_name": "OneClassSVM",
             "argname": "self"
           }
@@ -1772,7 +1772,7 @@
           "portkind": "output",
           "properties": {
             "module": "numpy",
-            "value": -9.328027042696448,
+            "value": -9.41121590253576,
             "annotation": "python/builtins/float",
             "qual_name": "float64",
             "argname": "return"
@@ -1792,7 +1792,7 @@
           "portkind": "input",
           "properties": {
             "module": "numpy",
-            "value": -9.328027042696448,
+            "value": -9.41121590253576,
             "annotation": "python/builtins/float",
             "qual_name": "float64",
             "argname": "start"
@@ -2072,7 +2072,7 @@
           "portkind": "output",
           "properties": {
             "module": "numpy",
-            "value": 0.35166798948152334,
+            "value": 0.3771829699449576,
             "annotation": "python/builtins/float",
             "qual_name": "float64",
             "argname": "return"
@@ -2101,7 +2101,7 @@
           "portkind": "input",
           "properties": {
             "module": "numpy",
-            "value": 0.35166798948152334,
+            "value": 0.3771829699449576,
             "annotation": "python/builtins/float",
             "qual_name": "float64",
             "argname": "1"
@@ -2113,7 +2113,7 @@
           "properties": {
             "value": [
               0,
-              0.35166798948152334
+              0.3771829699449576
             ],
             "argname": "return"
           }
@@ -2166,7 +2166,7 @@
           "properties": {
             "value": [
               0,
-              0.35166798948152334
+              0.3771829699449576
             ],
             "argname": "levels"
           }
@@ -3418,7 +3418,7 @@
           "id": "in1",
           "portkind": "input",
           "properties": {
-            "value": 23,
+            "value": 20,
             "annotation": "python/builtins/int",
             "argname": "0"
           }
@@ -3427,7 +3427,7 @@
           "id": "in2",
           "portkind": "input",
           "properties": {
-            "value": 6,
+            "value": 5,
             "annotation": "python/builtins/int",
             "argname": "1"
           }
@@ -3436,7 +3436,7 @@
           "id": "in3",
           "portkind": "input",
           "properties": {
-            "value": 1,
+            "value": 0,
             "annotation": "python/builtins/int",
             "argname": "2"
           }
@@ -3446,9 +3446,9 @@
           "portkind": "output",
           "properties": {
             "value": [
-              23,
-              6,
-              1
+              20,
+              5,
+              0
             ],
             "argname": "return"
           }
@@ -3476,9 +3476,9 @@
           "portkind": "input",
           "properties": {
             "value": [
-              23,
-              6,
-              1
+              20,
+              5,
+              0
             ],
             "argname": "1"
           }
@@ -3487,7 +3487,7 @@
           "id": "out1",
           "portkind": "output",
           "properties": {
-            "value": "error train: 23/200 ; errors novel regular: 6/40 ; errors novel abnormal: 1/40",
+            "value": "error train: 20/200 ; errors novel regular: 5/40 ; errors novel abnormal: 0/40",
             "annotation": "python/builtins/str",
             "argname": "return"
           }
@@ -3505,7 +3505,7 @@
           "id": "in1",
           "portkind": "input",
           "properties": {
-            "value": "error train: 23/200 ; errors novel regular: 6/40 ; errors novel abnormal: 1/40",
+            "value": "error train: 20/200 ; errors novel regular: 5/40 ; errors novel abnormal: 0/40",
             "annotation": "python/builtins/str",
             "argname": "xlabel"
           }
@@ -3926,7 +3926,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "17",
-        "annotation": "python/sklearn/base-estimator"
+        "annotation": "python/sklearn/base-svm"
       }
     },
     {
@@ -3937,7 +3937,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "17",
-        "annotation": "python/sklearn/base-estimator"
+        "annotation": "python/sklearn/base-svm"
       }
     },
     {
@@ -3948,7 +3948,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "17",
-        "annotation": "python/sklearn/base-estimator"
+        "annotation": "python/sklearn/base-svm"
       }
     },
     {
@@ -3959,7 +3959,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "17",
-        "annotation": "python/sklearn/base-estimator"
+        "annotation": "python/sklearn/base-svm"
       }
     },
     {
@@ -3970,7 +3970,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "17",
-        "annotation": "python/sklearn/base-estimator"
+        "annotation": "python/sklearn/base-svm"
       }
     },
     {

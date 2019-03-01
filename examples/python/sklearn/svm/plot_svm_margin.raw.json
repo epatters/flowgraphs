@@ -852,7 +852,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "return"
           }
@@ -861,7 +861,7 @@
       "properties": {
         "annotation_kind": "construct",
         "module": "sklearn.svm.classes",
-        "annotation": "python/sklearn/base-classifier",
+        "annotation": "python/sklearn/base-svc",
         "qual_name": "SVC"
       }
     },
@@ -874,7 +874,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "self",
             "annotation_index": 1
@@ -948,7 +948,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "return"
           }
@@ -959,7 +959,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "self",
             "annotation_index": 1
@@ -982,7 +982,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -1296,7 +1296,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -1501,7 +1501,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -2300,7 +2300,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -2327,9 +2327,12 @@
         }
       ],
       "properties": {
+        "annotation_kind": "slot",
         "module": "builtins",
         "slot": "support_vectors_",
-        "qual_name": "getattr"
+        "annotation": "python/sklearn/base-svc",
+        "qual_name": "getattr",
+        "annotation_index": 2
       }
     },
     {
@@ -2435,7 +2438,7 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -2462,9 +2465,12 @@
         }
       ],
       "properties": {
+        "annotation_kind": "slot",
         "module": "builtins",
         "slot": "support_vectors_",
-        "qual_name": "getattr"
+        "annotation": "python/sklearn/base-svc",
+        "qual_name": "getattr",
+        "annotation_index": 2
       }
     },
     {
@@ -3402,9 +3408,10 @@
           "properties": {
             "id": "7",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
-            "argname": "self"
+            "argname": "self",
+            "annotation_index": 1
           }
         },
         {
@@ -3415,7 +3422,8 @@
             "module": "numpy",
             "annotation": "python/numpy/ndarray",
             "qual_name": "ndarray",
-            "argname": "X"
+            "argname": "X",
+            "annotation_index": 2
           }
         },
         {
@@ -3426,12 +3434,15 @@
             "module": "numpy",
             "annotation": "python/numpy/ndarray",
             "qual_name": "ndarray",
-            "argname": "return"
+            "argname": "return",
+            "annotation_index": 1
           }
         }
       ],
       "properties": {
+        "annotation_kind": "function",
         "module": "sklearn.svm.base",
+        "annotation": "python/sklearn/predict-classification",
         "qual_name": "BaseSVC.predict"
       }
     },
@@ -3928,7 +3939,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "return"
           }
@@ -3937,7 +3948,7 @@
       "properties": {
         "annotation_kind": "construct",
         "module": "sklearn.svm.classes",
-        "annotation": "python/sklearn/base-classifier",
+        "annotation": "python/sklearn/base-svc",
         "qual_name": "SVC"
       }
     },
@@ -3950,7 +3961,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "self",
             "annotation_index": 1
@@ -4024,7 +4035,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "return"
           }
@@ -4035,7 +4046,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "self",
             "annotation_index": 1
@@ -4058,7 +4069,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -4372,7 +4383,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -4577,7 +4588,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -5376,7 +5387,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -5403,9 +5414,12 @@
         }
       ],
       "properties": {
+        "annotation_kind": "slot",
         "module": "builtins",
         "slot": "support_vectors_",
-        "qual_name": "getattr"
+        "annotation": "python/sklearn/base-svc",
+        "qual_name": "getattr",
+        "annotation_index": 2
       }
     },
     {
@@ -5511,7 +5525,7 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
             "argname": "0"
           }
@@ -5538,9 +5552,12 @@
         }
       ],
       "properties": {
+        "annotation_kind": "slot",
         "module": "builtins",
         "slot": "support_vectors_",
-        "qual_name": "getattr"
+        "annotation": "python/sklearn/base-svc",
+        "qual_name": "getattr",
+        "annotation_index": 2
       }
     },
     {
@@ -6478,9 +6495,10 @@
           "properties": {
             "id": "37",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-classifier",
+            "annotation": "python/sklearn/base-svc",
             "qual_name": "SVC",
-            "argname": "self"
+            "argname": "self",
+            "annotation_index": 1
           }
         },
         {
@@ -6491,7 +6509,8 @@
             "module": "numpy",
             "annotation": "python/numpy/ndarray",
             "qual_name": "ndarray",
-            "argname": "X"
+            "argname": "X",
+            "annotation_index": 2
           }
         },
         {
@@ -6502,12 +6521,15 @@
             "module": "numpy",
             "annotation": "python/numpy/ndarray",
             "qual_name": "ndarray",
-            "argname": "return"
+            "argname": "return",
+            "annotation_index": 1
           }
         }
       ],
       "properties": {
+        "annotation_kind": "function",
         "module": "sklearn.svm.base",
+        "annotation": "python/sklearn/predict-classification",
         "qual_name": "BaseSVC.predict"
       }
     },
@@ -7206,7 +7228,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "7",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -7217,7 +7239,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "7",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -7228,7 +7250,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "7",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -7239,7 +7261,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "7",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -7250,7 +7272,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "7",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -7261,7 +7283,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "7",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -7272,7 +7294,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "7",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -8045,7 +8067,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "37",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -8056,7 +8078,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "37",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -8067,7 +8089,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "37",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -8078,7 +8100,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "37",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -8089,7 +8111,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "37",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -8100,7 +8122,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "37",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {
@@ -8111,7 +8133,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "37",
-        "annotation": "python/sklearn/base-classifier"
+        "annotation": "python/sklearn/base-svc"
       }
     },
     {

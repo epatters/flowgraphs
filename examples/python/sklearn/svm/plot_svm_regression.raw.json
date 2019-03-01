@@ -532,7 +532,7 @@
           "properties": {
             "id": "10",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "return"
           }
@@ -541,7 +541,7 @@
       "properties": {
         "annotation_kind": "construct",
         "module": "sklearn.svm.classes",
-        "annotation": "python/sklearn/base-regressor",
+        "annotation": "python/sklearn/svr",
         "qual_name": "SVR"
       }
     },
@@ -572,7 +572,7 @@
           "properties": {
             "id": "11",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "return"
           }
@@ -581,7 +581,7 @@
       "properties": {
         "annotation_kind": "construct",
         "module": "sklearn.svm.classes",
-        "annotation": "python/sklearn/base-regressor",
+        "annotation": "python/sklearn/svr",
         "qual_name": "SVR"
       }
     },
@@ -621,7 +621,7 @@
           "properties": {
             "id": "12",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "return"
           }
@@ -630,7 +630,7 @@
       "properties": {
         "annotation_kind": "construct",
         "module": "sklearn.svm.classes",
-        "annotation": "python/sklearn/base-regressor",
+        "annotation": "python/sklearn/svr",
         "qual_name": "SVR"
       }
     },
@@ -643,7 +643,7 @@
           "properties": {
             "id": "10",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -679,7 +679,7 @@
           "properties": {
             "id": "10",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "return"
           }
@@ -690,7 +690,7 @@
           "properties": {
             "id": "10",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -713,7 +713,7 @@
           "properties": {
             "id": "10",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -760,7 +760,7 @@
           "properties": {
             "id": "11",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -796,7 +796,7 @@
           "properties": {
             "id": "11",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "return"
           }
@@ -807,7 +807,7 @@
           "properties": {
             "id": "11",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -830,7 +830,7 @@
           "properties": {
             "id": "11",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -877,7 +877,7 @@
           "properties": {
             "id": "12",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -913,7 +913,7 @@
           "properties": {
             "id": "12",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "return"
           }
@@ -924,7 +924,7 @@
           "properties": {
             "id": "12",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -947,7 +947,7 @@
           "properties": {
             "id": "12",
             "module": "sklearn.svm.classes",
-            "annotation": "python/sklearn/base-regressor",
+            "annotation": "python/sklearn/svr",
             "qual_name": "SVR",
             "argname": "self",
             "annotation_index": 1
@@ -1649,7 +1649,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "10",
-        "annotation": "python/sklearn/base-regressor"
+        "annotation": "python/sklearn/svr"
       }
     },
     {
@@ -1660,7 +1660,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "11",
-        "annotation": "python/sklearn/base-regressor"
+        "annotation": "python/sklearn/svr"
       }
     },
     {
@@ -1671,7 +1671,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "12",
-        "annotation": "python/sklearn/base-regressor"
+        "annotation": "python/sklearn/svr"
       }
     },
     {
@@ -1682,7 +1682,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "10",
-        "annotation": "python/sklearn/base-regressor"
+        "annotation": "python/sklearn/svr"
       }
     },
     {
@@ -1704,7 +1704,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "11",
-        "annotation": "python/sklearn/base-regressor"
+        "annotation": "python/sklearn/svr"
       }
     },
     {
@@ -1726,7 +1726,7 @@
       "targetPort": "in1",
       "properties": {
         "id": "12",
-        "annotation": "python/sklearn/base-regressor"
+        "annotation": "python/sklearn/svr"
       }
     },
     {

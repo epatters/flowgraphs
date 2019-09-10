@@ -13,8 +13,8 @@
 # limitations under the License.
 
 module TestPyFlowGraphs
+using Compat
 using Test
-using Nullables
 
 using Catlab.WiringDiagrams
 using SemanticFlowGraphs
@@ -28,13 +28,13 @@ using ..IntegrationTest: db, read_raw_graph, read_semantic_graph
 diagram = read_raw_graph(joinpath("python", "pandas_read_sql"))
 @test nboxes(diagram) == 2
 b1, b2 = boxes(diagram)
-@test isnull(b1.value.annotation)
-@test get(b2.value.annotation) == "python/pandas/read-sql-table"
-@test [ get(p.annotation) for p in output_ports(b1) ] ==
+@test isnothing(b1.value.annotation)
+@test b2.value.annotation == "python/pandas/read-sql-table"
+@test [ p.annotation for p in output_ports(b1) ] ==
   [ "python/sqlalchemy/engine" ]
-@test [ get(p.annotation) for p in input_ports(b2)[1:2] ] ==
+@test [ p.annotation for p in input_ports(b2)[1:2] ] ==
   [ "python/builtins/str", "python/sqlalchemy/engine" ]
-@test [ get(p.annotation) for p in output_ports(b2) ] ==
+@test [ p.annotation for p in output_ports(b2) ] ==
   [ "python/pandas/data-frame" ]
 
 # Semantic flow graph

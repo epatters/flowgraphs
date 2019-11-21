@@ -25,19 +25,18 @@ using ..IntegrationTest: db, read_semantic_graph
 
 # K-means clustering on the Iris dataset using base R.
 # FIXME: The encapsulated box should only have one input port.
-# FIXME: Box order, as noted in PyFlowGraphs.
 semantic = read_semantic_graph(joinpath("r", "clustering_kmeans"))
 d = WiringDiagram([], [])
+file = add_box!(d, construct(pair(concepts(db, ["tabular-file", "filename"])...)))
+read_file = add_box!(d, concept(db, "read-tabular-file"))
+transform = add_box!(d, Box(concepts(db, ["table"]), concepts(db, ["table"])))
 kmeans = add_box!(d, construct(pair(concepts(db,
   ["k-means", "clustering-model-n-clusters"])...)))
-read_file = add_box!(d, concept(db, "read-tabular-file"))
-file = add_box!(d, construct(pair(concepts(db, ["tabular-file", "filename"])...)))
-centroids = add_box!(d, concept(db, "k-means-centroids"))
-clusters = add_box!(d, concept(db, "clustering-model-clusters"))
 fit = add_box!(d, Hom("fit",
   otimes(concept(db, "k-means"), concept(db, "data")),
   concept(db, "k-means")))
-transform = add_box!(d, Box(concepts(db, ["table"]), concepts(db, ["table"])))
+centroids = add_box!(d, concept(db, "k-means-centroids"))
+clusters = add_box!(d, concept(db, "clustering-model-clusters"))
 add_wires!(d, [
   (file, 1) => (read_file, 1),
   (read_file, 1) => (transform, 1),

@@ -55,21 +55,19 @@ add_wires!(d, [
 @test semantic == d
 
 # K-means clustering on the Iris dataset using NumPy and SciPy.
-# FIXME: The boxes are added to `d` in the exact order of `semantic`. That
-# won't be necessary when we implement graph isomorphism for wiring diagrams.
 semantic = read_semantic_graph(joinpath("python", "scipy_clustering_kmeans"))
 kmeans_fit = Hom("fit",
   otimes(concept(db, "k-means"), concept(db, "data")),
   concept(db, "k-means"))
 d = WiringDiagram([], concepts(db, ["array","array"]))
-clusters = add_box!(d, concept(db, "clustering-model-clusters"))
+file = add_box!(d, construct(pair(concepts(db, ["tabular-file", "filename"])...)))
+read_file = add_box!(d, concept(db, "read-tabular-file"))
 transform = add_box!(d, Box(concepts(db, ["array"]), concepts(db, ["array"])))
 kmeans = add_box!(d, construct(pair(concepts(db,
   ["k-means", "clustering-model-n-clusters"])...)))
-read_file = add_box!(d, concept(db, "read-tabular-file"))
-file = add_box!(d, construct(pair(concepts(db, ["tabular-file", "filename"])...)))
 fit = add_box!(d, kmeans_fit)
 centroids = add_box!(d, concept(db, "k-means-centroids"))
+clusters = add_box!(d, concept(db, "clustering-model-clusters"))
 add_wires!(d, [
   (file, 1) => (read_file, 1),
   (read_file, 1) => (transform, 1),
@@ -77,8 +75,8 @@ add_wires!(d, [
   (transform, 1) => (fit, 2),
   (fit, 1) => (clusters, 1),
   (fit, 1) => (centroids, 1),
-  (clusters, 1) => (output_id(d), 2),
   (centroids, 1) => (output_id(d), 1),
+  (clusters, 1) => (output_id(d), 2),
 ])
 @test semantic == d
 
@@ -87,8 +85,8 @@ semantic = read_semantic_graph(joinpath("python", "sklearn_clustering_kmeans"))
 d = WiringDiagram([], concepts(db, ["array"]))
 file = add_box!(d, construct(pair(concepts(db, ["tabular-file", "filename"])...)))
 read_file = add_box!(d, concept(db, "read-tabular-file"))
-kmeans = add_box!(d, construct(concept(db, "k-means")))
 transform = add_box!(d, Box(concepts(db, ["table"]), concepts(db, ["array"])))
+kmeans = add_box!(d, construct(concept(db, "k-means")))
 fit = add_box!(d, concept(db, "fit"))
 clusters = add_box!(d, concept(db, "clustering-model-clusters"))
 add_wires!(d, [
@@ -102,20 +100,19 @@ add_wires!(d, [
 @test semantic == d
 
 # Compare sklearn clustering models using a cluster similarity metric.
-# FIXME: Box order, as mentioned above.
 semantic = read_semantic_graph(joinpath("python", "sklearn_clustering_metrics"))
 clustering_fit = Hom("fit",
   otimes(concept(db, "clustering-model"), concept(db, "data")),
   concept(db, "clustering-model"))
 d = WiringDiagram([], concepts(db, ["array", "k-means", "agglomerative-clustering"]))
 make_data = add_box!(d, Box([], concepts(db, ["array", "array"])))
-kmeans_fit = add_box!(d, clustering_fit)
-agglom = add_box!(d, construct(concept(db, "agglomerative-clustering")))
-agglom_clusters = add_box!(d, concept(db, "clustering-model-clusters"))
-agglom_fit = add_box!(d, clustering_fit)
-score = add_box!(d, Box(concepts(db, ["array", "array"]), []))
 kmeans = add_box!(d, construct(concept(db, "k-means")))
+kmeans_fit = add_box!(d, clustering_fit)
 kmeans_clusters = add_box!(d, concept(db, "clustering-model-clusters"))
+agglom = add_box!(d, construct(concept(db, "agglomerative-clustering")))
+agglom_fit = add_box!(d, clustering_fit)
+agglom_clusters = add_box!(d, concept(db, "clustering-model-clusters"))
+score = add_box!(d, Box(concepts(db, ["array", "array"]), []))
 add_wires!(d, [
   (make_data, 1) => (kmeans_fit, 2),
   (make_data, 1) => (agglom_fit, 2),
@@ -135,6 +132,7 @@ add_wires!(d, [
 semantic = read_semantic_graph(joinpath("python", "sklearn_regression_metrics"))
 d = WiringDiagram([], [])
 file = add_box!(d, construct(pair(concepts(db, ["tabular-file", "filename"])...)))
+read_file = add_box!(d, concept(db, "read-tabular-file"))
 data_x = add_box!(d, Box(concepts(db, ["table"]), concepts(db, ["table"])))
 data_y = add_box!(d, Box(concepts(db, ["table"]), concepts(db, ["column"])))
 ols = add_box!(d, construct(concept(db, "least-squares")))
@@ -142,7 +140,6 @@ fit = add_box!(d, concept(db, "fit-supervised"))
 predict = add_box!(d, concept(db, "predict"))
 error_l1 = add_box!(d, concept(db, "mean-absolute-error"))
 error_l2 = add_box!(d, concept(db, "mean-squared-error"))
-read_file = add_box!(d, concept(db, "read-tabular-file"))
 add_wires!(d, [
   (file, 1) => (read_file, 1),
   (read_file, 1) => (data_x, 1),
@@ -164,10 +161,10 @@ semantic = read_semantic_graph(joinpath("python", "statsmodels_regression"))
 d = WiringDiagram([], concepts(db, ["linear-regression"]))
 r_data = add_box!(d, construct(pair(concept(db, "r-dataset-name"),
                                     concept(db, "r-dataset-package"))))
+read_table = add_box!(d, concept(db, "read-table"))
 ols = add_box!(d, construct(concept(db, "least-squares")))
 eval_formula = add_box!(d, concept(db, "evaluate-formula-supervised"))
 fit = add_box!(d, concept(db, "fit-supervised"))
-read_table = add_box!(d, concept(db, "read-table"))
 add_wires!(d, [
   (r_data, 1) => (read_table, 1),
   (read_table, 1) => (eval_formula, 2),

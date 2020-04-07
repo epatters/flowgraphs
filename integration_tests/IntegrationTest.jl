@@ -15,6 +15,8 @@
 module IntegrationTest
 using Test
 
+using Catlab.WiringDiagrams
+import Catlab.WiringDiagrams: add_box!
 using SemanticFlowGraphs
 
 # Convenience methods to read raw and semantic flow graphs.
@@ -22,6 +24,9 @@ read_raw_graph(name::String) =
   read_raw_graphml(joinpath(@__DIR__, "$name.raw.graphml"))
 read_semantic_graph(name::String) =
   read_semantic_graphml(joinpath(@__DIR__, "$name.semantic.graphml"))
+
+# Convenience method for building semantic flow graphs.
+add_box!(d::WiringDiagram, f::Monocl.Hom) = add_box!(d, Box(f))
 
 # Load all concepts at the outset.
 const db = OntologyDB()
